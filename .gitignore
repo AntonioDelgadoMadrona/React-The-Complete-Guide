@@ -86,3 +86,4 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+burguer/src/hoc/Auxs/Aux.jsx
