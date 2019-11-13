@@ -40,14 +40,28 @@
         To create a production bundle, use `npm run build` or `yarn build`.
       -->
 
-
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBEAsqDWQ9KfjXX2tki3xaIchTGhxhkpL0",
+      authDomain: "react-my-burger-9c1ab.firebaseapp.com",
+      databaseURL: "https://react-my-burger-9c1ab.firebaseio.com",
+      projectId: "react-my-burger-9c1ab",
+      storageBucket: "react-my-burger-9c1ab.appspot.com",
+      messagingSenderId: "614478310371",
+      appId: "1:614478310371:web:459f718a18e70793274ed6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
   </script>
+
+
 </body>
 
 </html>
