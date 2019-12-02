@@ -2,7 +2,12 @@ import * as actionTypes from '../actions/actionTypes';
 import { updateObject } from '../../shared/utility';
 
 const initialState = {
-    ingredients: null,
+    ingredients: {
+        salad: 0,
+        cheese: 0,
+        bacon: 0,
+        meat: 1
+    },
     totalPrice: 4,
     error: false,
     building: false
