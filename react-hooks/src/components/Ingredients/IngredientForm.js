@@ -5,13 +5,13 @@ import LoadingIndicator from '../UI/LoadingIndicator';
 import './IngredientForm.css';
 
 const IngredientForm = React.memo(props => {
-
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredAmount, setEnteredAmount] = useState('');
+  console.log('RENDERING INGREDIENT FORM');
 
   const submitHandler = event => {
     event.preventDefault();
-    props.addIngredient({ title: enteredTitle, amount: enteredAmount })
+    props.onAddIngredient({ title: enteredTitle, amount: enteredAmount });
   };
 
   return (
@@ -25,8 +25,7 @@ const IngredientForm = React.memo(props => {
               id="title"
               value={enteredTitle}
               onChange={event => {
-                const newTitle = event.target.value;
-                setEnteredTitle(newTitle);
+                setEnteredTitle(event.target.value);
               }}
             />
           </div>
@@ -37,8 +36,7 @@ const IngredientForm = React.memo(props => {
               id="amount"
               value={enteredAmount}
               onChange={event => {
-                const newAmount = event.target.value;
-                setEnteredAmount(newAmount);
+                setEnteredAmount(event.target.value);
               }}
             />
           </div>
